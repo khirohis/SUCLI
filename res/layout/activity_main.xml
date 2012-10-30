@@ -12,7 +12,7 @@
 
     <Spinner
         android:id="@+id/spinner_recent"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
     <TextView
@@ -23,7 +23,7 @@
 
     <EditText
         android:id="@+id/edit_command"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
         android:ems="10" >
@@ -33,25 +33,25 @@
 
     <Button
         android:id="@+id/button_execute"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
 		android:onClick="onExecuteClick"
         android:text="@string/button_execute" />
 
     <CheckBox
         android:id="@+id/check_sudo"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/check_sudo" />
 
     <ScrollView
         android:id="@+id/text_scroll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
 
 	    <TextView
         	android:id="@+id/text_output"
-        	android:layout_width="match_parent"
+        	android:layout_width="fill_parent"
         	android:layout_height="wrap_content" />
     </ScrollView>
 
