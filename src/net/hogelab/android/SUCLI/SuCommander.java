@@ -11,8 +11,6 @@ public class SuCommander {
 	@SuppressWarnings("unused")
 	private static final String TAG = SuCommander.class.getSimpleName();
 
-	protected OutputListener	mOutputListener = null;
-
 	protected Process			mProcess = null;
 	protected OutputStream		mStdin = null;
 	protected InputStream		mStdout = null;
@@ -20,6 +18,8 @@ public class SuCommander {
 
 	protected Thread			mStdoutReader = null;
 	protected Thread			mStderrReader = null;
+
+	protected OutputListener	mOutputListener = null;
 
 
 	public interface OutputListener {
@@ -158,11 +158,11 @@ public class SuCommander {
 	}
 
 
-	private interface ReaderThreadListener {
+	protected interface ReaderThreadListener {
 		public void onRead(String line);
 	}
 
-	private static class ReaderThread extends Thread {
+	protected static class ReaderThread extends Thread {
 		private ReaderThreadListener mListener;
 		private BufferedReader		mReader;
 
