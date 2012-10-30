@@ -1,4 +1,4 @@
 SUCLI
 =====
 
-command line tool for su
+Android command line tool for su
