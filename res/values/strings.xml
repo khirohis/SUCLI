@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SUCLI</string>
+
+    <!-- MainActivity (layout/activity_main.xml) -->
+	<string name="label_recent">Recent Command</string>
+	<string name="label_command">Command</string>
+	<string name="button_execute">Execute</string>
+	<string name="check_sudo">sudo</string>
+	
+</resources>
